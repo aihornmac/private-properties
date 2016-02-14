@@ -1,0 +1,22 @@
+{
+  "name": "private-properties",
+  "version": "0.0.1",
+  "description": "a private-properties module for javascript depending on es6 Map and WeakMap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aihornmac/private-properties.git"
+  },
+  "author": "Aihorn Mac",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aihornmac/private-properties/issues"
+  },
+  "homepage": "https://github.com/aihornmac/private-properties#readme",
+  "dependencies": {
+    "es6-collections": "^0.5.5"
+  }
+}
