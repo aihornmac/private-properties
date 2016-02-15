@@ -4,7 +4,7 @@
   "description": "a private-properties module for javascript depending on es6 Map and WeakMap",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/mocha/bin/mocha"
   },
   "repository": {
     "type": "git",
@@ -15,8 +15,13 @@
   "bugs": {
     "url": "https://github.com/aihornmac/private-properties/issues"
   },
-  "homepage": "https://github.com/aihornmac/private-properties#readme",
+  "homepage": "https://github.com/aihornmac/private-properties",
   "dependencies": {
     "es6-collections": "^0.5.5"
+  },
+  "devDependencies": {
+    "better-assert": "^1.0.2",
+    "is-plain-object": "^2.0.1",
+    "mocha": "^2.4.5"
   }
 }

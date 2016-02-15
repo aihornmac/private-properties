@@ -11,7 +11,16 @@ function getPrivateProperties (ctx) {
 
 function createPrivatePropertiesPool () {
   var map = new WeakMap();
-  return getPrivateProperties.bind(map);
+  var p = getPrivateProperties.bind(map);
+  Object.defineProperties(p, {
+    link: {
+      enumerable: true,
+      value: function (me, that) {
+        this.set(me, p(that));
+      }.bind(map)
+    }
+  });
+  return p;
 }
 
 module.exports = createPrivatePropertiesPool;
