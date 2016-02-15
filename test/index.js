@@ -6,6 +6,11 @@ describe('Private Properties test', function () {
 
   var p = props();
 
+  it('one props should be the same', function () {
+    var obj = {};
+    assert(p(obj) === p(obj));
+  });
+
   it('two props will be different', function () {
     var p1 = props();
     var p2 = props();
